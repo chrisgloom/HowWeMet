@@ -12,6 +12,10 @@
   }
 }
 
+h1 {
+  font-size: 20vmin;
+}
+
 .intro-section {
   padding: 1em;
   padding-bottom: 2em;
@@ -23,7 +27,6 @@
 
   h1 {
     text-align: center;
-    font-size: 5em;
     font-family: "Lilita One", serif;
     clear: both;
   }
@@ -57,23 +60,37 @@
     object-fit: cover;
     border-radius: 50%;
   }
+
+  center {
+    padding: 1em;
+  }
+
+  img {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .chris-section {
-  padding-top: 10em;
+  padding-top: 10vh;
   padding-bottom: 21em;
   background: rgba(251, 51, 123, 1);
 
   div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
   p {
     width: 10em;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 0 2vw;
   }
 
   video {
@@ -87,7 +104,6 @@
 
   h1 {
     text-align: center;
-    font-size: 5em;
     font-family: "Lilita One", serif;
     clear: both;
   }
@@ -98,6 +114,7 @@
   padding-bottom: 2em;
   background-color: white;
   border-radius: 2em;
+  margin: 1em;
 }
 
 .date {
@@ -112,7 +129,6 @@
 /* Presentational Styles */
 
 html {
-  font-size: 52.6%;
   scroll-behavior: smooth;
 }
 
@@ -123,6 +139,13 @@ body {
   background-size: cover;
   max-width: 100%;
   color: white;
+  font-size: 2.5vmin;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 .content {
