@@ -25,27 +25,35 @@
 h1 {
   font-size: 20vmin;
 }
+em {
+  font-style: italic;
+}
 .intro-section {
-  padding: 1em;
   padding-bottom: 2em;
   margin: auto;
   background: #fc755b;
   background: linear-gradient(0deg, #fc755b 0%, #fb337b 100%);
 }
 .intro-section h1 {
+  margin: 0 1vw;
   text-align: center;
   font-family: "Lilita One", serif;
   clear: both;
 }
 .intro-section p {
-  max-width: 50em;
+  max-width: 70vw;
   margin: auto;
 }
 .intro-section p:not(:last-child) {
   margin-bottom: 15px;
 }
+@media screen and (max-width: 500px) {
+  .intro-section p {
+    max-width: 90vw;
+  }
+}
 .intro-section ol {
-  max-width: 47.5em;
+  max-width: 60vw;
   list-style: decimal;
   margin: auto;
   padding-left: 2.5em;

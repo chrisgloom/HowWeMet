@@ -16,8 +16,11 @@ h1 {
   font-size: 20vmin;
 }
 
+em {
+  font-style: italic;
+}
+
 .intro-section {
-  padding: 1em;
   padding-bottom: 2em;
   margin: auto;
   background: rgb(252, 117, 91);
@@ -26,13 +29,14 @@ h1 {
       rgba(251, 51, 123, 1) 100%);
 
   h1 {
+    margin: 0 1vw;
     text-align: center;
     font-family: "Lilita One", serif;
     clear: both;
   }
 
   p {
-    max-width: 50em;
+    max-width: 70vw;
     margin: auto;
 
     &:not(:last-child) {
@@ -40,8 +44,14 @@ h1 {
     }
   }
 
+  @media screen and (max-width: 500px) {
+    p {
+      max-width: 90vw;
+    }
+  }
+
   ol {
-    max-width: 47.5em;
+    max-width: 60vw;
     list-style: decimal;
     margin: auto;
     padding-left: 2.5em;
