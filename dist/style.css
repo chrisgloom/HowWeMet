@@ -152,15 +152,14 @@ body {
 .name {
   color: grey;
 }
-.speech-bubble-chris {
-  white-space: pre-line;
+.speech-bubble-christopher {
   color: white;
   position: relative;
   background: #44acf7;
   padding: 0.5em 1em 1em;
   border-radius: 0.4em;
 }
-.speech-bubble-chris:after {
+.speech-bubble-christopher:after {
   content: "";
   position: absolute;
   left: 0;

@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <section class="chat-section" id="chat-1">
+        <div class="message"> {{#each chats}}
+            <div class="chat">
+                <div class="date">{{dateConvert timestamp}}</div>
+                <div class="name">{{user}}</div>
+                <div class="speech-bubble-{{toLower user}}">{{{newlineToBr message}}}</div>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+</body>
