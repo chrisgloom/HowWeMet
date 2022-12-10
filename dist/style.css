@@ -111,11 +111,15 @@ em {
   clear: both;
 }
 .chat-section {
-  padding: 1em;
   padding-bottom: 2em;
   background-color: white;
   border-radius: 2em;
+}
+@media screen and (min-width: 500px) {
+.chat-section {
+  padding: 1em;
   margin: 1em;
+}
 }
 .date {
   margin: auto;
